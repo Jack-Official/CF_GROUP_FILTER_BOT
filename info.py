@@ -30,7 +30,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS' ,'https://envs.sh/AOQ.jpg')).split()
 NOR_IMG = environ.get('NOR_IMG', "https://envs.sh/PvY.jpg")
 SPELL_IMG = environ.get('SPELL_IMG', "https://envs.sh/AOI.jpg")
-MOVIE = environ.get('MOVIE', "https://envs.sh/AOI.jpg")
+FORCE_IMG = environ.get('FORCE_IMG', "https://envs.sh/Cjl.jpg")
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
