@@ -568,12 +568,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":   
         buttons = [[
         ], [  
-            InlineKeyboardButton('➜ Add me to Your Group ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➜ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🛠️ Help', callback_data='help'),
+            InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
+            ],[
+            InlineKeyboardButton('⚠️ ᴀʙᴏᴜᴛ', callback_data='about'),
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✗', callback_data='close_data')
         ], [     
-            InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
+            InlineKeyboardButton('✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ✗', callback_data='closeme')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -581,45 +584,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "help":
+    elif query.data == "support":
         buttons = [[
-            InlineKeyboardButton('❔How To Use Me❔', callback_data='howtoues')
+            InlineKeyboardButton('❔ʜᴏᴡ ᴛɪ ᴜꜱᴇ ᴍᴇ❔', callback_data='howtoues')
             ],[
-            InlineKeyboardButton('⚠️About', callback_data='about'),
-            InlineKeyboardButton('Status📊', callback_data='stats')
+            InlineKeyboardButton('📣 ᴜᴩᴅᴀᴛᴇꜱ', url="https://t.me/Mallu_Movie_Hub_Group"),
+            InlineKeyboardButton('ɢʀᴏᴜᴏ - 2️⃣', url="https://t.me/+iEbhY7mM4oE1OTVl")
             ],[
-            InlineKeyboardButton('⭅ Back', callback_data='start'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
+            InlineKeyboardButton('⭅  ʙᴀᴄᴋ   ⇛', callback_data='start')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.SUPPORT_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('👨‍💻Developer', url='tg://settings'),
-            InlineKeyboardButton('Editor🖥️', url='https://t.me/TG_x_filter')
-            ],[
-            InlineKeyboardButton('⭅ Back', callback_data='help'),
-            InlineKeyboardButton('Close ✗', callback_data='close_data')
+            InlineKeyboardButton('⭅ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('📊 ꜱᴛᴀᴛᴜꜱ 📊', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons) 
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text="▣ ▢ ▢"
-        )
-        await query.message.edit_text(
-            text="▣ ▣ ▢"
-        )
-        await query.message.edit_text(
-            text="▣ ▣ ▣"
-        )
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
