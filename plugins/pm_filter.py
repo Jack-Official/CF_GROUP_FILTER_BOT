@@ -962,7 +962,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🗃 ⟪ {get_size(file.file_size)} ⟫ 🎥 {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f" [{get_size(file.file_size)}]  {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -971,11 +971,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"⟫ 🎥 {file.file_name}",
+                    text=f" {file.file_name}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🗃 ⟪ {get_size(file.file_size)}",
+                    text=f" {get_size(file.file_size)}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
             ]
@@ -983,13 +983,10 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🌟 {search} 🌟', 'dupe')
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton("⚡Check My Pm⚡", url=f"https://t.me/{temp.U_NAME}"),
-            InlineKeyboardButton("⚠️Main Channel⚠️", url="https://t.me/cinema_flix_updates")
+            InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/cinema_flix_updates"),
+            InlineKeyboardButton("ʙᴇꜱᴛ", 'reqbest'),
+            InlineKeyboardButton("ᴛɪᴩꜱ", 'reqtips'),
+            InlineKeyboardButton("ɪɴꜰᴏ", 'reqinfo')
         ]
     )
     if offset != "":
