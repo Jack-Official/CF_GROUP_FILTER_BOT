@@ -5,16 +5,17 @@ class script(object):
 📣 ᴍᴏᴠɪᴇ ᴜᴩᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ.
 🚦 ʙᴏᴛ ᴛᴏ ᴜꜱᴇ ᴍᴇ.</b>"""
 
-    ABOUT_TXT = """<b>─────────────────────
-   <b><u> ⚠️ ABOUT ME ⚠️ </u></b>
-─────────────────────</b>
-<b>╭⎋ • ɴᴀᴍᴇ - {}</b>
-<b>╰⎋ • ᴄʀᴇᴀᴛᴏʀ - <a href=tg://settings>ᴍʏ ғʀɪᴇɴᴅ</b></a>
-<b>╭⎋ • ᴅᴇᴠᴇʟᴏᴘᴇʀ - <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
-<b>╰⎋ • ʟᴀɴɢᴜᴀɢᴇ - ᴘʏᴛʜᴏɴ3</b>
-<b>╭⎋ • ᴅᴀᴛᴀʙᴀsᴇ - ᴍᴏɴɢᴏ ᴅʙ</b>
-<b>╰⎋ • ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ - <a href=https//t.me/cinema_flix_updates>:ᴄʟɪᴄᴋ ʜᴇʀᴇ</b></a>
-<b>─────────────────────</b>"""
+    ABOUT_TXT = """<b><u>⚠️ ᴀʙᴏᴜᴛ ᴍᴇ</u></b>
+
+<b>⦁ ᴍʏ ɴᴀᴍᴇ: {}
+<b>⦁ ᴍʏ ᴏᴡɴᴇʀ: <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
+<b>⦁ ᴄʀᴇᴀᴛᴏʀ: <a href=tg://settings>ᴛʜɪꜱ ᴩᴇʀꜱᴏɴ</b></a>
+<b>⦁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>ᴩʏʀᴏɢʀᴀᴍ</b></a>
+<b>⦁ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org/>ᴩʏᴛʜᴏɴ3</b></a>
+<b>⦁ ᴅᴛᴀᴛʙᴀꜱᴇ: <a href=https://www.mongodb.com/>ᴍᴏɴɢᴏDB</b></a>
+<b>⦁ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: ᴋᴏʏᴇʙ
+<b>⦁ ꜱᴜᴩᴩᴏʀᴛ: <a href=https://t.me/+iEbhY7mM4oE1OTVl>ᴊᴏɪɴ ʜᴇʀᴇ</b></a>
+<b>⦁ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ: [ ꜱᴛᴀʙʟᴇ ]</b>"""
 
     STATUS_TXT = """<b>╭────[♻️Status Board♻️]────⍟
 │
@@ -42,13 +43,7 @@ class script(object):
 
 <b>⪼ 🍃 𝖡𝗈𝗍 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : @{}</b> """   
 
-    CUSTOM_FILE_CAPTION = """<b>ғɪʟᴇ ɴᴀᴍᴇ :</b><b><code>{file_name}</code></b>
-
-  <b>ғɪʟᴇ sɪᴢᴇ :</b><b><code>{file_size}</code></b>
-   
-  <b>ᴊᴏɪɴ ɴᴏᴡ: @cinema_flix_updates</b>
-
-  <b>ɴᴏᴛᴇ : ᴀғᴛᴇʀ ᴅᴏᴡɴʟᴏᴀᴅ ᴛʜᴇ ғɪʟᴇs, sᴀᴠᴇ ᴛʜᴇ ғɪʟᴇ ᴛᴏ ɢᴀʟʟᴇʀʏ ᴀɴᴅ ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴇʟᴇᴛᴇ ʙᴜᴛᴛᴏɴ, ᴅᴏɴ'ᴛ ᴄʟɪᴄᴋ ʙᴇғᴏʀᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇ ғɪʟᴇs, ɪғ ᴜ ᴅᴏɴ'ᴛ ᴡᴀɴᴛ ᴛʜɪs ғɪʟᴇ ᴘʟᴇᴀsᴇ ᴄʟɪᴄᴋ ᴅᴇʟᴇᴛᴇ ʙᴜᴛᴛᴏɴ</b>"""
+    CUSTOM_FILE_CAPTION = """<b>ғɪʟᴇ ɴᴀᴍᴇ :</b><b><code>{file_name}</code></b>"""
 
     HOWTOUES_TXT = """<b>‼️ <u>Instructions</u> ‼️</b>
 
