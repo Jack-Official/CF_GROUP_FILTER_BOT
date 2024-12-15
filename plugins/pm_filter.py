@@ -462,10 +462,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
-                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                          InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                           ],[
-                          InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
+                          InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                         ]]
                     )
                 )                       
@@ -509,10 +509,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
-                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                          InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                           ],[
-                          InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
+                          InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                         ]]
                     )
                 )
@@ -552,10 +552,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
-                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                  InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                   ],[
-                  InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
+                  InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                 ]]
             )
         )
