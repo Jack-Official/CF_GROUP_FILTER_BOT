@@ -1114,11 +1114,14 @@ async def advantage_spell_chok(msg):
         InlineKeyboardButton(
             text="ɢᴏᴏɢʟᴇ",
             url=f"https://google.com/search?q={search}"
+        ),
+        InlineKeyboardButton(
+            text="ɢᴏᴏɢʟᴇ",
+            url=f"https://google.com/search?q={search}"
         )
-            
     ]]
     spl = await msg.reply_photo(
-            photo="https://telegra.ph/file/0a777cb06df4f0336861b.jpg", 
+            photo="https://envs.sh/RCE.jpg", 
             caption=NON_IMG.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(btn)
     )
