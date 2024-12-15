@@ -78,7 +78,7 @@ class script(object):
 
 ᴇxᴀᴍᴘʟᴇ :</b>"""
 
-   REQINFO ="""<b>⚠️ I N F O R M A T I O N ⚠️
+   REQINFO = """<b>⚠️ INFORMATION ⚠️\n\n
 
 ᴀғᴛᴇʀ 1 ᴅᴀʏs ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡᴇʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 
 
