@@ -226,7 +226,10 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [[                          
-                      InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data')
+                      InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                      InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+                      ],[
+                      InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                     ]]
                 )
             )
@@ -264,7 +267,10 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [[                          
-               InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data')
+               InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+               InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+               ],[
+               InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
             ]]
            )
         )
