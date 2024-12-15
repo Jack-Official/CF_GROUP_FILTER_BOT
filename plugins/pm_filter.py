@@ -1123,8 +1123,8 @@ async def advantage_spell_chok(msg):
             reply_markup=InlineKeyboardMarkup(btn)
     )
    await asyncio.sleep(8)
-        await k.delete()
-        return
+   await k.delete()
+   return
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
