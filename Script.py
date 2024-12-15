@@ -70,7 +70,7 @@ class script(object):
 - ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʏᴇᴀʀ 
 - ᴇɴɢ : ʟᴇᴏ 2023</b>"""
 
-     REQTIPS = """<b>🎬 MOVIE REQUEST FORMAT 🎬
+   REQTIPS = """<b>🎬 MOVIE REQUEST FORMAT 🎬
 
 ➲ ɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ 
 ➲ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇ 
@@ -79,7 +79,7 @@ class script(object):
 
 ᴇxᴀᴍᴘʟᴇ :....</b>"""
 
-     REQINFO ="""<b>⚠️ I N F O R M A T I O N ⚠️
+  REQINFO ="""<b>⚠️ I N F O R M A T I O N ⚠️
 
 ᴀғᴛᴇʀ 1 ᴅᴀʏs ᴛʜɪs ᴍᴇssᴀɢᴇ ᴡᴇʟʟ ʙᴇ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴅᴇʟᴇᴛᴇᴅ 
 
