@@ -1112,12 +1112,12 @@ async def advantage_spell_chok(msg):
     search = msg.text.replace(" ", "+")
     btn = [[
         InlineKeyboardButton(
-            text="ɢᴏᴏɢʟᴇ",
+            text="🔎 ɢᴏᴏɢʟᴇ 🔍",
             url=f"https://google.com/search?q={search}"
         ),
         InlineKeyboardButton(
-            text="ɢᴏᴏɢʟᴇ",
-            url=f"https://google.com/search?q={search}"
+            text="🔎 ʏᴀɴᴅᴇx 🔍",
+            url=f"https://yandex.com/search?text={search}"
         )
     ]]
     spl = await msg.reply_photo(
