@@ -562,6 +562,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pages":
         await query.answer("🤨 Curiosity is a little more, isn't it? 😁", show_alert=True)
+    elif query.data == "reqinfo":
+        await query.answer(text=script.REQINFO, show_alert=True)
+    elif query.data == "reqtips":
+        await query.answer(text=script.REQTIPS, show_alert=True)
+    elif query.data == "reqbest":
+        await query.answer(text=script.REQBEST, show_alert=True)
     elif query.data == "closeme":
         buttons = [[
             InlineKeyboardButton('❖ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ ❖', callback_data='start')
