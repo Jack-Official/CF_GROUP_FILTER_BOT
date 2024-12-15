@@ -27,7 +27,7 @@ SPELL_CHECK = {}
 PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-NON_IMG ="""hello Bro"""
+NON_IMG ="""<b>Hᴇʏ <a href=tg://settings>Mʏ Fʀɪᴇɴᴅ</a></b>\n\nn<b>Hᴇʀᴇ ɪs ᴍᴏᴠɪᴇ ʀᴇϙᴜᴇsᴛ ғᴏʀᴍᴀᴛ :</b>\n\n<b>➲ Gᴏ ᴛᴏ Gᴏᴏɢʟᴇ</b>\n\n<b>➲ Tʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʏᴏᴜ ᴡᴀɴᴛ</b>\n\n<b>➲ Cᴏᴘʏ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ</b>\n\n<b>➲ Tʜᴇɴ ᴘᴀsᴛᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʜᴇʀᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ</b>\n\n<b><u>🚫 Dᴏɴᴛ Sᴘᴀᴍ 🚫</u></b>"""
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
