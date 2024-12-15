@@ -462,8 +462,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
-                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
+                          InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
+                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                          ],[
+                          InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
                         ]]
                     )
                 )                       
@@ -507,8 +509,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
-                          InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
+                          InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
+                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                          ],[
+                          InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
                         ]]
                     )
                 )
@@ -548,8 +552,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 1", url='https://t.me/Mallu_Movie_Hub_Group'),
-                  InlineKeyboardButton("𝖬𝗈𝗏𝗂𝖾 𝖦𝗋𝗈𝗎𝗉 2", url='https://t.me/+iEbhY7mM4oE1OTVl')
+                  InlineKeyboardButton('💥 ɢʀᴏᴜᴘ', url="https://t.me/+vP8QdSOL8BpjM2E1"),
+                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/CinemaShopLinkz")
+                  ],[
+                  InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
                 ]]
             )
         )
