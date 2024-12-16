@@ -7,7 +7,7 @@ class script(object):
 
     ABOUT_TXT = """<b><u>⚠️ ᴀʙᴏᴜᴛ ᴍᴇ</u></b>
 
-<b>⦁ ᴍʏ ɴᴀᴍᴇ: {}
+<b>⦁ ᴍʏ ɴᴀᴍᴇ: {}</b>
 <b>⦁ ᴍʏ ᴏᴡɴᴇʀ: <a href=https://t.me/TG_x_filter>🇮🇳❍ 𝖒𝖆𝖓𝖙𝖎𝖘 ❍™◢ ◤</b></a>
 <b>⦁ ᴄʀᴇᴀᴛᴏʀ: <a href=tg://settings>ᴛʜɪꜱ ᴩᴇʀꜱᴏɴ</b></a>
 <b>⦁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>ᴩʏʀᴏɢʀᴀᴍ</b></a>
