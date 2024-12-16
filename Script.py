@@ -13,7 +13,7 @@ class script(object):
 <b>⦁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>ᴩʏʀᴏɢʀᴀᴍ</b></a>
 <b>⦁ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org/>ᴩʏᴛʜᴏɴ3</b></a>
 <b>⦁ ᴅᴛᴀᴛʙᴀꜱᴇ: <a href=https://www.mongodb.com/>ᴍᴏɴɢᴏDB</b></a>
-<b>⦁ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: ᴋᴏʏᴇʙ</b>
+<b>⦁ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: <a href=https://railway.app/>ʀᴀɪʟᴡᴀʏ</b></a>
 <b>⦁ ꜱᴜᴩᴩᴏʀᴛ: <a href=https://t.me/+iEbhY7mM4oE1OTVl>ᴊᴏɪɴ ʜᴇʀᴇ</b></a>
 <b>⦁ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ: [ ꜱᴛᴀʙʟᴇ ]</b>"""
 
