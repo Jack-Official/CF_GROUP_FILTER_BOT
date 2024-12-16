@@ -49,8 +49,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
-MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "6"))
-START_MESSAGE = environ.get('START_MESSAGE', '<b>👋Hello{user}!!🎉</b>\nlm <b>Auto-Filter Bot</b> I can send you films in your groups..!\n\nI can provide movies in your telegram groups. Its East to use me just Add me to Your Group as admin thats All i will provide movies there..✨')
+MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "8"))
+START_MESSAGE = environ.get('START_MESSAGE', '<b>Hᴇʟʟᴏ{user}!</b>\n\n<b>I ᴀᴍ ᴀ</b><b><u>ᴘᴏᴡᴇʀғᴜʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ.!</u></b>\n\n<b>Iғ ʏᴏᴜ ʜᴀᴠᴇ ᴀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʏᴏᴜ ᴄᴀɴ ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴛʜᴀᴛ ɢʀᴏᴜᴘ. I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴀʟʟ ᴛʏᴘᴇ ᴏғ ᴍᴏᴠɪᴇs ᴛʜᴇʀᴇ.!!</b>')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "👋ഹലോ {query}! ഇത് നിന്റെ അല്ല...🥴")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b><u>🔰 READ THIS INSTRUCTION 🔰</u></b>\n\n<b>ആദ്യം【 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 】എന്ന ബട്ടൺ ക്ലിക്ക് ചെയ്തു ചാനലിൽ ജോയിൻ ചെയ്.. എന്നിട്ട് വീണ്ടു ബോട്ടിൽ വന്നിട്ട്【 ᴍᴇ ᴊᴏɪɴᴇᴅ 】എന്ന ബട്ടൺ ക്ലിക്ക് ചെയ്താൽ ഫയൽ കിട്ടുന്നതായിരിക്കും</b>\n\n<b>Fɪʀsᴛ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ【 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ 】ʙᴜᴛᴛᴏɴ ᴀɴᴅ ᴊᴏɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ. ᴛʜᴇɴ ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴄʟɪᴄᴋ ᴏɴ【 ᴍᴇ ᴊᴏɪɴᴇᴅ 】ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ғɪʟᴇ.!!</b>')
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://graph.org/file/b386a561b6c4a1be48411.jpg")
