@@ -73,10 +73,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton(
                     "⚠️Join Main Channel⚠️", url=invite_link.invite_link),
-                InlineKeyboardButton(
-                    " 🔃Try Again🔃", callback_data=f"{pre}#{file_id}")],[
-                InlineKeyboardButton(
-                    "Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")
+                )
             ]
         ]
 
@@ -86,7 +83,7 @@ async def start(client, message):
                 pre = 'checksubp' if kk == 'filep' else 'checksub'
                 btn.append([InlineKeyboardButton(" ᴛʀʏ ᴀɢᴀɪɴ ♽", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton(" ᴛʀʏ ᴀɢᴀɪɴ ♽", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
             photo=FORCE_IMG,
             chat_id=message.from_user.id,
