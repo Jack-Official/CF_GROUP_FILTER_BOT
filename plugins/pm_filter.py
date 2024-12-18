@@ -568,6 +568,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.REQTIPS, show_alert=True)
     elif query.data == "reqbest":
         await query.answer(text=script.REQBEST, show_alert=True)
+    elif query.data =="neosub":
+        await query.answer(text=script.NEOSUB, show_alert=True)
     elif query.data == "closeme":
         buttons = [[
             InlineKeyboardButton('❖ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ ❖', callback_data='start')
