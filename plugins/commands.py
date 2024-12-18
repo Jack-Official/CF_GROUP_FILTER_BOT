@@ -72,8 +72,8 @@ async def start(client, message):
                 InlineKeyboardButton(
                     "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link
                 ),
-                InlineKeyboardButton(
-                    " ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")
+                InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")
+                    
             ]
         ]
 
@@ -81,7 +81,7 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub'
-                btn.append([InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")])
+                btn.append([InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
                 btn.append([InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_photo(
