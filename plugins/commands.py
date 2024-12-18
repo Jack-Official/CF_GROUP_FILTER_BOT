@@ -68,12 +68,11 @@ async def start(client, message):
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
         if message.command[1] != "subscribe": 
-            try:
-                kk, file_id = message.command[1].split("_", 1)
-                pre = 'checksubp' if kk == 'filep' else 'checksub'
-                btn = [[InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link),
-                        InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
-                        InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")]]
+            kk, file_id = message.command[1].split("_", 1)
+            pre = 'checksubp' if kk == 'filep' else 'checksub'
+            btn = [[InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link),
+                    InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
+                    InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")]]
         await client.send_photo(
             chat_id=message.from_user.id,
             photo=FORCE_IMG,
