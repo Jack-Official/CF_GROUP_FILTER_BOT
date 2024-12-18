@@ -21,10 +21,8 @@ from plugins.helper.admin_check import admin_fliter
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-PM_BUTTONS = {}
 BUTTONS = {}
 SPELL_CHECK = {}
-PM_SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
 NON_IMG ="""<b>Hᴇʏ <a href=tg://settings>Mʏ Fʀɪᴇɴᴅ</a></b>\n\n<b>Hᴇʀᴇ ɪs ᴍᴏᴠɪᴇ ʀᴇϙᴜᴇsᴛ ғᴏʀᴍᴀᴛ :</b>\n\n<b>➲ Gᴏ ᴛᴏ Gᴏᴏɢʟᴇ</b>\n\n<b>➲ Tʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʏᴏᴜ ᴡᴀɴᴛ</b>\n\n<b>➲ Cᴏᴘʏ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ</b>\n\n<b>➲ Tʜᴇɴ ᴘᴀsᴛᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʜᴇʀᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ</b>\n\n<b><u>🚫 Dᴏɴᴛ Sᴘᴀᴍ 🚫</u></b>"""
@@ -561,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         )
     elif query.data == "pages":
-        await query.answer("🤨 Curiosity is a little more, isn't it? 😁", show_alert=True)
+        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ..👀", show_alert=True)
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
     elif query.data == "reqtips":
