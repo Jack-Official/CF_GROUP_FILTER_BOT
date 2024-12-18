@@ -79,7 +79,10 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe": 
-            btn.append([InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")])
+           try:
+               kk, file_id = message.command[1].split("_", 1)
+               pre = 'checksubp' if kk == 'filep' else 'checksub'
+               btn.append([InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")])
         await client.send_photo(
             photo=FORCE_IMG,
             chat_id=message.from_user.id,
