@@ -75,8 +75,8 @@ async def start(client, message):
                         InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
                         InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")]]
         await client.send_photo(
-            photo=FORCE_IMG,
             chat_id=message.from_user.id,
+            photo=FORCE_IMG,
             caption=FORCE_SUB_TEXT,
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.DEFAULT
