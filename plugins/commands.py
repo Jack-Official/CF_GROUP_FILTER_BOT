@@ -67,23 +67,13 @@ async def start(client, message):
         except ChatAdminRequired:
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
-        btn = [
-            [
-                InlineKeyboardButton(
-                    "ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link
-                )
-                    
-            ]
-        ]
-
         if message.command[1] != "subscribe": 
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub'
-                btn.append([InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
-                btn.append([InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")])
-            except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn = [[InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link),
+                        InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
+                        InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")]]
         await client.send_photo(
             photo=FORCE_IMG,
             chat_id=message.from_user.id,
