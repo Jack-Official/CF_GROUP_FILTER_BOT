@@ -43,7 +43,9 @@ class script(object):
 
 <b>⪼ 🍃 𝖡𝗈𝗍 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : @{}</b> """   
 
-    CUSTOM_FILE_CAPTION = """<b>ғɪʟᴇ ɴᴀᴍᴇ :</b><b><code>{file_name}</code></b>"""
+    CUSTOM_FILE_CAPTION = """<b>🎟️ ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ  {mention}</b>
+    
+    <b>ғɪʟᴇ ɴᴀᴍᴇ :</b><b><code>{file_name}</code></b>"""
 
     REQBEST = """♻️ ᴀsᴋ ᴍᴏᴠɪᴇs ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ\n\n♻️ ᴅᴏɴᴛ ᴀsᴋ ᴍᴏᴠɪᴇs ᴛʜᴏsᴇ ᴀʀᴇ ɴᴏᴛ ʀᴇʟᴇᴀsᴇᴅ ɪɴ ᴏᴛᴛ ᴛʜᴇᴀᴛʀᴇ ϙᴜᴀʟɪᴛʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🥹\n\n♻️ ғᴏʀ ʙᴇᴛᴛᴇʀ ʀᴇsᴜʟᴛ\n\n- ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʏᴇᴀʀ\n\n- ᴇɴɢ : ʟᴇᴏ 2023"""
 
