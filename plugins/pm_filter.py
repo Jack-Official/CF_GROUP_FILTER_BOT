@@ -579,6 +579,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(btn)
         await query.message.edit_text(
             text=script.SPELL_CHECK_ENG, 
+        )
     elif query.data == "closeme":
         buttons = [[
             InlineKeyboardButton('❖ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ ❖', callback_data='start')
