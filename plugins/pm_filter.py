@@ -569,7 +569,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.REQBEST, show_alert=True)
     elif query.data =="neosub":
         await query.answer(text=script.NEOSUB, show_alert=True)
-    elif query.data == "malspell":
+    elif query.data =="malspell":
         btn = [[
             InlineKeyboardButton('🔍 ɢᴏᴏɢʟᴇ 🔎', url=f'https://google.com/search?q='),
             InlineKeyboardButton(' 🔍 ʏᴀɴᴅᴇx 🔎', url=f'https://yandex.com/search?text=')
