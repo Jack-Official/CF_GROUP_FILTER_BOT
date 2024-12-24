@@ -145,7 +145,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"◽ [{get_size(file.file_size)}] ◾ {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
+                    text=f" [{get_size(file.file_size)}]  {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -154,10 +154,10 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"◾ {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
+                    text=f" {file.file_name}", callback_data=f'files#{nxreq}#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"◽ {get_size(file.file_size)}",
+                    text=f" {get_size(file.file_size)}",
                     callback_data=f'files#{nxreq}#{file.file_id}',
                 ),
             ]
@@ -221,27 +221,6 @@ async def advantage_spoll_choker(bot, query):
             k = await query.message.edit('<b>👋Hey {message.from_user.mention}</b>\n\nHere is movie request format👇\n\n• Go to Google\n\n• Type the movie name you want\n\n• Copy the movie name with correct spelling\n\n• Then paste the movie name here in this group\n\n<b>🚫 Dont Spam 🚫</b>', reply_markup = one_button)
             await asyncio.sleep(99)
             await k.delete()
-
-
-@Client.on_callback_query(filters.regex(r"^pmspolling"))
-async def pm_spoll_tester(bot, query):
-    _, user, movie_ = query.data.split('#')
-    if movie_ == "close_spellcheck":
-        return await query.message.delete()
-    movies = PM_SPELL_CHECK.get(query.message.reply_to_message.id)
-    if not movies:
-        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
-    movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
-    files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
-    if files:
-        k = (movie, files, offset, total_results)
-        await pm_AutoFilter(bot, query, k)
-    else:
-        one_button = InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Search in Google 🔎", url="https://www.google.com")]])
-        k = await query.message.edit('<b>👋Hey {message.from_user.mention}</b>\n\nHere is movie request format👇\n\n• Go to Google\n\n• Type the movie name you want\n\n• Copy the movie name with correct spelling\n\n• Then paste the movie name here in this group\n\n<b>🚫 Dont Spam 🚫</b>', reply_markup = one_button)
-        await asyncio.sleep(99)
-        await k.delete()
 
 
 @Client.on_callback_query()
@@ -581,16 +560,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "start":   
         buttons = [[
-        ], [  
-            InlineKeyboardButton('➜ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
+            InlineKeyboardButton('✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ✗', callback_data='closeme')
+            ],[
             InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
             ],[
             InlineKeyboardButton('⚠️ ᴀʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✗', callback_data='close_data')
-        ], [     
-            InlineKeyboardButton('✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ✗', callback_data='closeme')
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✗', callback_data='close_data')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -602,8 +578,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('❔ʜᴏᴡ ᴛɪ ᴜꜱᴇ ᴍᴇ❔', callback_data='howtoues')
             ],[
-            InlineKeyboardButton('📣 ᴜᴩᴅᴀᴛᴇꜱ', url="https://t.me/Mallu_Movie_Hub_Group"),
-            InlineKeyboardButton('ɢʀᴏᴜᴏ - 2️⃣', url="https://t.me/+iEbhY7mM4oE1OTVl")
+            InlineKeyboardButton('• Gʀᴏᴜᴘ 1 •', url="https://t.me/Mallu_Movie_Hub_Group"),
+            InlineKeyboardButton('• Gʀᴏᴜᴘ 2 •', url="https://t.me/+iEbhY7mM4oE1OTVl")
+            ],[
+            InlineKeyboardButton('• Mᴀɪɴ Cʜᴀɴɴᴇʟ •', url="https://t.me/cinema_flix_updates")
             ],[
             InlineKeyboardButton('⭅ ʙᴀᴄᴋ ⇛', callback_data='start')
         ]] 
