@@ -940,7 +940,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f" [{get_size(file.file_size)}]  {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f"🔗 [{get_size(file.file_size)}] ➣ {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -964,7 +964,7 @@ async def auto_filter(client, msg, spoll=False):
             InlineKeyboardButton("ʙᴇꜱᴛ", 'reqbest'),
             InlineKeyboardButton("ᴛɪᴩꜱ", 'reqtips'),
             InlineKeyboardButton("ɪɴꜰᴏ", 'reqinfo'),
-            InlineKeyboardButton(f" {len(btn)}", callback_data="files")
+            InlineKeyboardButton(f"{len(btn)}", callback_data="files")
         ]
     )
     if offset != "":
@@ -974,11 +974,11 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), 
              InlineKeyboardButton(text=f"1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="Nᴇxᴛ ⤷", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="ɴᴇxᴛ⤷", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="❕No More Next Pages❕", callback_data="pages")]
+            [InlineKeyboardButton(text="!.ɴᴏ ᴍᴏʀᴇ ɴᴇxᴛ ᴩᴀɢᴇꜱ.!", callback_data="pages")]
         )                   
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1053,9 +1053,7 @@ async def advantage_spell_chok(msg):
         InlineKeyboardButton(
             text="🔮 ɪᴍᴅʙ 🔮",
             url=f"https://imdb.com/find?q={search}")
-        ],[
-        InlineKeyboardButton(
-            "🇮🇳 ᴛʀᴀɴsʟᴀᴛᴇ ᴛᴏ ᴍᴀʟᴀʏᴀʟᴀᴍ 🇮🇳", callback_data='malspell')
+
     ]]
     spl = await msg.reply_photo(
             photo="https://envs.sh/RCE.jpg", 
