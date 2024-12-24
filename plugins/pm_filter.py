@@ -575,14 +575,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "support":
         buttons = [[
-            InlineKeyboardButton('❔ʜᴏᴡ ᴛɪ ᴜꜱᴇ ᴍᴇ❔', callback_data='howtoues')
+            InlineKeyboardButton('❔ ʜᴏᴡ ᴛɪ ᴜꜱᴇ ᴍᴇ ❔', callback_data='howtoues')
             ],[
-            InlineKeyboardButton('• Gʀᴏᴜᴘ 1 •', url="https://t.me/Mallu_Movie_Hub_Group"),
-            InlineKeyboardButton('• Gʀᴏᴜᴘ 2 •', url="https://t.me/+iEbhY7mM4oE1OTVl")
+            InlineKeyboardButton('• ɢʀᴏᴜᴩ 1 •', url="https://t.me/Mallu_Movie_Hub_Group"),
+            InlineKeyboardButton('• ɢʀᴏᴜᴩ 2 •', url="https://t.me/+iEbhY7mM4oE1OTVl")
             ],[
-            InlineKeyboardButton('• Mᴀɪɴ Cʜᴀɴɴᴇʟ •', url="https://t.me/cinema_flix_updates")
+            InlineKeyboardButton('• ᴄɪɴᴇᴍᴀ ꜰʟɪx ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ •', url="https://t.me/cinema_flix_updates")
             ],[
-            InlineKeyboardButton('⭅ ʙᴀᴄᴋ ⇛', callback_data='start')
+            InlineKeyboardButton('⭅ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇛', callback_data='start')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
@@ -593,7 +593,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('⭅ ʙᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('📊 ꜱᴛᴀᴛᴜꜱ 📊', callback_data='stats')
+            InlineKeyboardButton('ꜱᴛᴀᴛᴜꜱ 📊', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons) 
         await query.message.edit_text(
@@ -978,7 +978,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="!.ɴᴏ ᴍᴏʀᴇ ɴᴇxᴛ ᴩᴀɢᴇꜱ.!", callback_data="pages")]
+            [InlineKeyboardButton(text="!..ɴᴏ ᴍᴏʀᴇ ɴᴇxᴛ ᴩᴀɢᴇꜱ..!", callback_data="pages")]
         )                   
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
