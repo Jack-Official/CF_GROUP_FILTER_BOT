@@ -17,14 +17,15 @@ class script(object):
 <b>⦁ ꜱᴜᴩᴩᴏʀᴛ: <a href=https://t.me/+iEbhY7mM4oE1OTVl>ᴊᴏɪɴ ʜᴇʀᴇ</b></a>
 <b>⦁ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ: [ ꜱᴛᴀʙʟᴇ ]</b>"""
 
-    STATUS_TXT = """<b>╭────[♻️Status Board♻️]────⍟
-│
-├<b>📁 Total Files: <code>{}</code></b>
-├<b>👥 Total Members: <code>{}</code></b>
-├<b>♻️ Total Chats: <code>{}</code></b>
-├<b>🗃 Used Storage: <code>{}</code> MB</b>
-│
-╰─────────────────────⍟</b>"""
+    STATUS_TXT = """<u><b>📊 ꜱᴛᴀᴛᴜꜱ </b></u>
+
+<b>╔═══[ ꜱᴛᴀᴛᴜꜱ ʙᴏᴀʀᴅ ]═══╗</b>
+<b>📁 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ :<code>{}</code></b>
+<b>👥 ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀꜱ :<code>{}</code></b>
+<b>💬 ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ : <code>{}</code></b>
+<b>🗃 ᴜꜱᴇᴅ ꜱᴛᴏʀᴀɢᴇ : <code>{}</code> MB</b>
+<b>╚═══[ ꜱᴛᴀᴛᴜꜱ ʙᴏᴀʀᴅ ]═══╝</b>"""
+    
     LOG_TEXT_G = """#AddNewGroup
     
 <b>⪼ 👥 𝖦𝗋𝗈𝗎𝗉 : {a}</b>
