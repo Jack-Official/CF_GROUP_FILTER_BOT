@@ -25,7 +25,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-NON_IMG ="""<b>Hᴇʏ <a href=tg://settings>Mʏ Fʀɪᴇɴᴅ</a></b>\n\n<b>Hᴇʀᴇ ɪs ᴍᴏᴠɪᴇ ʀᴇϙᴜᴇsᴛ ғᴏʀᴍᴀᴛ :</b>\n\n<b>➲ Gᴏ ᴛᴏ Gᴏᴏɢʟᴇ</b>\n\n<b>➲ Tʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʏᴏᴜ ᴡᴀɴᴛ</b>\n\n<b>➲ Cᴏᴘʏ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ᴄᴏʀʀᴇᴄᴛ sᴘᴇʟʟɪɴɢ</b>\n\n<b>➲ Tʜᴇɴ ᴘᴀsᴛᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ʜᴇʀᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ</b>\n\n<b><u>🚫 Dᴏɴᴛ Sᴘᴀᴍ 🚫</u></b>"""
+NON_IMG ="""<b>Hᴇʏ <a href=tg://settings>Mʏ Fʀɪᴇɴᴅ</a></b>\n\n<b>⌯ Usᴇ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ sᴇᴀʀᴄʜ ᴏɴ ɢᴏᴏɢʟᴇ  ᴀɴᴅ ᴄᴏᴘʏ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴀɴᴅ ᴘᴀsᴛᴇ.!!</b>\n\n<b>⌯ Dᴏɴ'ᴛ ᴀsᴋ ᴍᴏᴠɪᴇs ᴛʜᴀᴛ ᴀʀᴇ ɴᴏᴛ ʀᴇʟᴇᴀsᴇᴅ ɪɴ ᴏᴛᴛ ᴘʟᴀᴛғᴏʀᴍ.!!</b>\n\n<b>⌯ Tʀʏ ᴛᴏ ᴀsᴋ ɪɴ [ Mᴏᴠɪᴇ ɴᴀᴍᴇ, Yᴇᴀʀ, Lᴀɴɢᴜᴀɢᴇ ] ᴛʜɪs ғᴏʀᴍᴀᴛ.!!</b>\n\n<b><u>⚠️ Dᴏɴ'ᴛ Usᴇ: ➲  ':(!,./)</u></b>"""
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
