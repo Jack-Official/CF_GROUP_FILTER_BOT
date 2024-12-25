@@ -940,7 +940,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔗 [{get_size(file.file_size)}] ➣ {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f"🔗 [{get_size(file.file_size)}]  {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -1017,7 +1017,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>👋 Hey {message.from_user.mention},🎉</b>\n\n<b>📁 Movie Name :</b> <b><code>{search}</code></b>\n<b>🗃 Total File :</b> <b>{str(total_results)}</b>\n\n<b>{message.chat.title}</b>"
+        cap = f"<b>〓〓〓{message.from_user.mention}〓〓〓</b>\n\n<b>● ʀᴇꜱᴜʟᴛ :</b> <b><code>{search}</code></b>\n<b>● ᴛᴏᴛᴀʟ ꜰɪʟᴇ :</b> <b>{str(total_results)}</b>\n\n<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
