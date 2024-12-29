@@ -7,15 +7,15 @@ class script(object):
 
     ABOUT_TXT = """<b><u>⚠️ ᴀʙᴏᴜᴛ ᴍᴇ</u></b>
 
-<b>⦁ ᴍʏ ɴᴀᴍᴇ: {}</b>
-<b>⦁ ᴍʏ ᴏᴡɴᴇʀ: <a href=https://t.me/TG_x_filter>🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></a>
-<b>⦁ ᴄʀᴇᴀᴛᴏʀ: <a href=tg://settings>ᴛʜɪꜱ ᴩᴇʀꜱᴏɴ</b></a>
-<b>⦁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org/>ᴩʏʀᴏɢʀᴀᴍ</b></a>
-<b>⦁ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org/>ᴩʏᴛʜᴏɴ3</b></a>
-<b>⦁ ᴅᴛᴀᴛʙᴀꜱᴇ: <a href=https://www.mongodb.com/>ᴍᴏɴɢᴏDB</b></a>
-<b>⦁ ʙᴏᴛ ꜱᴇʀᴠᴇʀ: <a href=https://railway.app/>ʀᴀɪʟᴡᴀʏ</b></a>
-<b>⦁ ꜱᴜᴩᴩᴏʀᴛ: <a href=https://t.me/+iEbhY7mM4oE1OTVl>ᴊᴏɪɴ ʜᴇʀᴇ</b></a>
-<b>⦁ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ: [ ꜱᴛᴀʙʟᴇ ]</b>"""
+<b>╭━━━❰ {} ❱━━━➣</b>
+<b>┣ • 𝐎ᴡɴᴇʀ 𝐍ᴀᴍᴇ: <a href=https://t.me/TG_x_filter>🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></a>
+<b>┣ • 𝐂ʀᴇᴀᴛᴏʀ: <a href=tg://settings>𝐌ʏ 𝐅ʀɪᴇɴᴅ</b></a>
+<b>┣ • 𝐋ɪʙʀᴀʀʏ: 𝐏ʏʀᴏɢʀᴀᴍ</b>
+<b>┣ • 𝐋ᴀɴɢᴜᴀɢᴇ: 𝐏ʏᴛʜᴏɴ-3</b>
+<b>┣ • 𝐃ᴀᴛᴀ 𝐁ᴀꜱᴇ: 𝐌ᴏɴɢᴏ 𝐃𝐁 </b>
+<b>┣ • 𝐇ᴏꜱᴛᴇᴅ 𝐎ɴ: 𝐀ʟʟ 𝐖ᴇʙ</b>
+<b>┣ • 𝐁ᴜɪʟᴅ 𝐒ᴛᴀᴛᴜꜱ: ᴠ5.2 [𝐒ᴛᴀʙʟᴇ]</b>
+<b>╰━━━━━━━━━━━━━━━━━━━━➣</b>"""
 
     STATUS_TXT = """<u><b>📊 ꜱᴛᴀᴛᴜꜱ </b></u>
 
