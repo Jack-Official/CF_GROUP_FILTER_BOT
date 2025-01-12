@@ -539,8 +539,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pages":
         await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ..👀", show_alert=True)
-    elif query.data == "reqinfo":
-        await query.answer(text=script.REQINFO, show_alert=True)
     elif query.data == "reqtips":
         await query.answer(text=script.REQTIPS, show_alert=True)
     elif query.data == "reqbest":
@@ -606,7 +604,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➜ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴩ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('⭅ 𝐁ᴀᴄᴋ', callback_data='support'),
-            InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ 📞', url="https://t.me/TG_x_filter")
+            InlineKeyboardButton('𝐂ᴏɴᴛᴀᴄᴛ 📞', url="https://t.me/TG_x_filter")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -961,10 +959,9 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton("ʙᴇꜱᴛ", 'reqbest'),
-            InlineKeyboardButton("ᴛɪᴩꜱ", 'reqtips'),
-            InlineKeyboardButton("ɪɴꜰᴏ", 'reqinfo'),
-            InlineKeyboardButton(f"{len(btn)}", callback_data="files")
+            InlineKeyboardButton("𝐁ᴇꜱᴛ", 'reqbest'),
+            InlineKeyboardButton(f"{len(btn)}", callback_data="files"),
+            InlineKeyboardButton("𝐓ɪᴩꜱ", 'reqtips')
         ]
     )
     if offset != "":
@@ -1017,7 +1014,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>〓〓〓{message.from_user.mention}〓〓〓</b>\n\n<b>● ʀᴇꜱᴜʟᴛ :</b> <b><code>{search}</code></b>\n<b>● ᴛᴏᴛᴀʟ ꜰɪʟᴇ :</b> <b>{str(total_results)}</b>\n\n<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ {message.chat.title}</b>"
+        cap = f"<b>🕵️ 𝐑ᴇϙᴜᴇsᴛᴇᴅ 𝐌ᴏᴠɪᴇ:</b> <b>{search}</b>\n<b>🗃️ 𝐓ᴏᴛᴀʟ 𝐑ᴇsᴜʟᴛs:</b> <b>{str(total_results)}</b>\n📬 𝐑ᴇϙᴜᴇsᴛᴇᴅ 𝐁ʏ:{message.from_user.mention}</b>\n\n<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
