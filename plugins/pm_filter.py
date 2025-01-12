@@ -440,10 +440,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                          InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+                          InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                          InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                           ],[
-                          InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                          InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                         ]]
                     )
                 )                       
@@ -487,10 +487,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                          InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+                          InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                          InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                           ],[
-                          InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                          InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                         ]]
                     )
                 )
@@ -530,10 +530,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                  InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+                  InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                  InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                   ],[
-                  InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                  InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                 ]]
             )
         )
@@ -961,10 +961,10 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f"{len(btn)}", callback_data="files"),
             InlineKeyboardButton("𝐁ᴇꜱᴛ", 'reqbest'),
             InlineKeyboardButton("𝐈ɴꜰᴏ", 'reqinfo'),
-            InlineKeyboardButton("𝐓ɪᴩꜱ", 'reqtips')
+            InlineKeyboardButton("𝐓ɪᴩꜱ", 'reqtips'),
+            InlineKeyboardButton(f"{len(btn)}", callback_data="files")
         ]
     )
     if offset != "":
