@@ -541,6 +541,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ..👀", show_alert=True)
     elif query.data == "reqtips":
         await query.answer(text=script.REQTIPS, show_alert=True)
+    elif query.data == "reqinfo":
+        await query.answer(text=script.REQINFO, show_alert=True)
     elif query.data == "reqbest":
         await query.answer(text=script.REQBEST, show_alert=True)
     elif query.data =="neosub":
@@ -959,8 +961,9 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton("𝐁ᴇꜱᴛ", 'reqbest'),
             InlineKeyboardButton(f"{len(btn)}", callback_data="files"),
+            InlineKeyboardButton("𝐁ᴇꜱᴛ", 'reqbest'),
+            InlineKeyboardButton("𝐈ɴꜰᴏ", 'reqinfo'),
             InlineKeyboardButton("𝐓ɪᴩꜱ", 'reqtips')
         ]
     )
