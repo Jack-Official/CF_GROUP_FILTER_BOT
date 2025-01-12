@@ -1014,7 +1014,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🕵️ 𝐑ᴇϙᴜᴇsᴛᴇᴅ 𝐌ᴏᴠɪᴇ:</b> <b>{search}</b>\n<b>🗃️ 𝐓ᴏᴛᴀʟ 𝐑ᴇsᴜʟᴛs:</b> <b>{str(total_results)}</b>\n📬 𝐑ᴇϙᴜᴇsᴛᴇᴅ 𝐁ʏ:{message.from_user.mention}</b>\n\n<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ {message.chat.title}</b>"
+        cap = f"<b>🕵️ 𝐑ᴇϙᴜᴇsᴛᴇᴅ 𝐌ᴏᴠɪᴇ:</b> <code>{search}</code>\n<b>🗃️ 𝐓ᴏᴛᴀʟ 𝐑ᴇsᴜʟᴛs:</b> <b>{str(total_results)}</b>\n📬 𝐑ᴇϙᴜᴇsᴛᴇᴅ 𝐁ʏ:{message.from_user.mention}</b>\n\n<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -1044,16 +1044,16 @@ async def advantage_spell_chok(msg):
     search = msg.text.replace(" ", "+")
     btn = [[
         InlineKeyboardButton(
-            text="🔎 ɢᴏᴏɢʟᴇ 🔍",
+            text="🔎 𝐆ᴏᴏɢʟᴇ 🔍",
             url=f"https://google.com/search?q={search}"
         ),
         InlineKeyboardButton(
-            text="🔮 ɪᴍᴅʙ 🔮",
+            text="🔮 𝐈ᴍᴅʙ 🔮",
             url=f"https://imdb.com/find?q={search}")
 
     ]]
     spl = await msg.reply_photo(
-            photo="https://envs.sh/RCE.jpg", 
+            photo="https://envs.sh/9fX.jpg", 
             caption=NON_IMG.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(btn)
     )
