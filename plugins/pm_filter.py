@@ -549,7 +549,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.NEOSUB, show_alert=True)
     elif query.data == "closeme":
         buttons = [[
-            InlineKeyboardButton('❖ ᴄʟɪᴄᴋ ʜᴇʀᴇ ꜰᴏʀ ᴍᴏʀᴇ ʙᴜᴛᴛᴏɴꜱ ❖', callback_data='start')
+            InlineKeyboardButton('✨ 𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ 𝐅ᴏʀ 𝐌ᴏʀᴇ 𝐁ᴜᴛᴛᴏɴꜱ ✨', callback_data='start')
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -559,13 +559,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "start":   
         buttons = [[
-            InlineKeyboardButton('✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ✗', callback_data='closeme')
+            InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
             ],[
-            InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
+            InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝐒ᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
             ],[
-            InlineKeyboardButton('⚠️ ᴀʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✗', callback_data='close_data')    
+            InlineKeyboardButton('⚠️ 𝐀ʙᴏᴜᴛ', callback_data='about'),
+            InlineKeyboardButton('𝐂ʟᴏꜱᴇ ✗', callback_data='close_data')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
