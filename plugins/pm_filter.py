@@ -575,14 +575,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "support":
         buttons = [[
-            InlineKeyboardButton('❔ ʜᴏᴡ ᴛɪ ᴜꜱᴇ ᴍᴇ ❔', callback_data='howtoues')
+            InlineKeyboardButton('❔ 𝐇ᴏᴡ 𝐓ᴏ 𝐔ꜱᴇ 𝐌ᴇ ❔', callback_data='howtoues')
             ],[
-            InlineKeyboardButton('• ɢʀᴏᴜᴩ 1 •', url="https://t.me/Mallu_Movie_Hub_Group"),
-            InlineKeyboardButton('• ɢʀᴏᴜᴩ 2 •', url="https://t.me/+iEbhY7mM4oE1OTVl")
+            InlineKeyboardButton('• 𝐆ʀᴏᴜᴩ 1 •', url="https://t.me/Mallu_Movie_Hub_Group"),
+            InlineKeyboardButton('• 𝐆ʀᴏᴜᴩ 2 •', url="https://t.me/+iEbhY7mM4oE1OTVl")
             ],[
-            InlineKeyboardButton('• ᴄɪɴᴇᴍᴀ ꜰʟɪx ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ •', url="https://t.me/cinema_flix_updates")
+            InlineKeyboardButton('• 𝐂ɪɴᴇᴍᴀ 𝐅ʟɪx 𝐌ᴀɪɴ 𝐂ʜᴀɴɴᴇʟ •', url="https://t.me/cinema_flix_updates")
             ],[
-            InlineKeyboardButton('⭅ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇛', callback_data='start')
+            InlineKeyboardButton('⭅ 𝐁ᴀᴄᴋ 𝐓ᴏ 𝐇ᴏᴍᴇ ⇛', callback_data='start')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)             
         await query.message.edit_text(                     
