@@ -22,12 +22,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('➜ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➜ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📢ᴏᴛᴛ ᴜᴘᴅᴀᴛᴇs', url='https://t.me/cinema_flix_updates'),
-            InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🎬', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('📢𝐎ᴛᴛ 𝐔ᴘᴅᴀᴛᴇs', url='https://t.me/cinema_flix_updates'),
+            InlineKeyboardButton('𝐌ᴏᴠɪᴇ 𝐆ʀᴏᴜᴘ🎬', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
-            InlineKeyboardButton('〄 ᴄʜᴇᴄᴋ ᴍʏ ᴘᴍ 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('〄 𝐂ʜᴇᴄᴋ 𝐌ʏ 𝐏ᴍ 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_GROUP_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -41,13 +41,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ✗', callback_data='closeme')
+            InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
         ], [
-            InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
-        ], [ 
-            InlineKeyboardButton('⚠️ ᴀʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✗', callback_data='close_data')
+            InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝐒ᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
+        ], [
+            InlineKeyboardButton('⚠️ 𝐀ʙᴏᴜᴛ', callback_data='about'),
+            InlineKeyboardButton('𝐂ʟᴏꜱᴇ ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -70,9 +70,9 @@ async def start(client, message):
         if message.command[1] != "subscribe": 
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub'
-            btn = [[InlineKeyboardButton("ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=invite_link.invite_link),
-                    InlineKeyboardButton(" ᴍᴇ ᴊᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
-                    InlineKeyboardButton("Hᴇʏ Bᴏᴛ....! Wʜʏ I'ᴍ ᴊᴏɪɴɪɴɢ", callback_data="neosub")]]
+            btn = [[InlineKeyboardButton("𝐉ᴏɪɴ 𝐂ʜᴀɴɴᴇʟ", url=invite_link.invite_link),
+                    InlineKeyboardButton(" 𝐌ᴇ 𝐉ᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
+                    InlineKeyboardButton("𝐇ᴇʏ 𝐁ᴏᴛ....! 𝐖ʜʏ 𝐈'ᴍ 𝐉ᴏɪɴɪɴɢ", callback_data="neosub")]]
         await client.send_photo(
             chat_id=message.from_user.id,
             photo=FORCE_IMG,
@@ -83,13 +83,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('✗ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ✗', callback_data='closeme')
+            InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
         ], [
-            InlineKeyboardButton('🔍 ꜱᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ꜱᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
+            InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('𝐒ᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
         ], [
-            InlineKeyboardButton('⚠️ ᴀʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✗', callback_data='close_data')    
+            InlineKeyboardButton('⚠️ 𝐀ʙᴏᴜᴛ', callback_data='about'),
+            InlineKeyboardButton('𝐂ʟᴏꜱᴇ ✗', callback_data='close_data')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -213,10 +213,10 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [[                          
-                      InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                      InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+                      InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+                      InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                       ],[
-                      InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                      InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
                     ]]
                 )
             )
@@ -254,10 +254,10 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [[                          
-               InlineKeyboardButton('💌 ᴄʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-               InlineKeyboardButton('ᴅᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
+               InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
+               InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
                ],[
-               InlineKeyboardButton(text=f'📟 Fɪʟᴇ sɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+               InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
             ]]
            )
         )
