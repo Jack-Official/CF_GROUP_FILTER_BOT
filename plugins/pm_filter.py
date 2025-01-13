@@ -545,6 +545,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.REQINFO, show_alert=True)
     elif query.data == "reqbest":
         await query.answer(text=script.REQBEST, show_alert=True)
+    elif query.data == "nomg":
+        await query.answer("ഇവിടെ നോക്കണ്ട സാധനം കൊടുക്കുന്നില്ല..🤧", show_alert=True)
     elif query.data =="neosub":
         await query.answer(text=script.NEOSUB, show_alert=True)
     elif query.data == "closeme":
@@ -559,6 +561,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "start":   
         buttons = [[
+            InlineKeyboardButton(' 🏞️ ', callback_data='nomg'),
+            InlineKeyboardButton(' 🛡 ', callback_data='nomg'),
+            InlineKeyboardButton(' 💳 ', callback_data='nomg'),
+            InlineKeyboardButton(' 💰 ', callback_data='nomg'),
+            InlineKeyboardButton(' ⚙ ', callback_data='nomg')
+            ],[
             InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
             ],[
             InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
