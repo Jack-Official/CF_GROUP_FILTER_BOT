@@ -551,7 +551,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.NEOSUB, show_alert=True)
     elif query.data == "closeme":
         buttons = [[
-            InlineKeyboardButton('✨ 𝐂ʟɪᴄᴋ 𝐇ᴇʀᴇ 𝐅ᴏʀ 𝐌ᴏʀᴇ 𝐁ᴜᴛᴛᴏɴꜱ ✨', callback_data='start')
+            InlineKeyboardButton('✨ Click Here For More Buttons ✨', callback_data='start')
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -605,7 +605,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "howtoues":
         buttons = [[
-            InlineKeyboardButton('➜ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴩ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➜ Add me to Your Group ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('⭅ Back', callback_data='support'),
             InlineKeyboardButton('Contact 📞', url="https://t.me/TG_x_filter")
