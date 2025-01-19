@@ -5,15 +5,19 @@ class script(object):
 📣 𝐌ᴏᴠɪᴇ 𝐔ᴩᴅᴀᴛᴇꜱ 𝐂ʜᴀɴɴᴇʟ.
 🚦 𝐁ᴏᴛ 𝐓ᴏ 𝐔ꜱᴇ 𝐌ᴇ.</b>"""
 
-    ABOUT_TXT = """<b><u>⚠️ 𝐀ʙᴏᴜᴛ 𝐌ᴇ</u></b>
+    ABOUT_TXT = """<b>━━━❰ {} ❱━━━➣</b>
+    
+<b>○ <i>Owner Name : <a href=https://t.me/TG_x_filter>🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></a></i>
 
-<b>━━━❰ {} ❱━━━➣</b>
-<b>○ Owner Name : <a href=https://t.me/TG_x_filter>🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></a>
-<b>○ Creator : <a href=tg://settings>My Friend</b></a>
-<b>○ Library : Pyrogram</b>
-<b>○ Language : Python3</b>
-<b>○ Data Base : MongoDB</b>
-<b>○ Build Status : v5.2 [Stable]</b> """
+<b>○ <i>Creator : <a href=tg://settings>My Friend</b></a></i>
+
+<b>○ <i>Library : Pyrogram</b></i>
+
+<b>○ <i>Language : Python3</b></i>
+
+<b>○ <i>Data Base : MongoDB</b></i>
+
+<b>○ <i>Build Status : v5.2 [Stable]</b></i> """
 
     STATUS_TXT = """<u><b>📊 𝐒ᴛᴀᴛᴜꜱ </b></u>
 
