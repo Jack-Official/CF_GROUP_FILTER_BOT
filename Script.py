@@ -1,9 +1,9 @@
 class script(object):   
-    SUPPORT_TXT = """<b><u>⦁ 𝐂ʜᴀɴɴᴇʟꜱ & 𝐆ʀᴏᴜᴩ ⦁</u>
+    SUPPORT_TXT = """<b><u>⦁ Channels & Groups ⦁</u>
 
-🎬 𝐌ᴏᴠɪᴇ 𝐑ᴇǫᴜᴇsᴛɪɴɢ 𝐆ʀᴏᴜᴩ.
-📣 𝐌ᴏᴠɪᴇ 𝐔ᴩᴅᴀᴛᴇꜱ 𝐂ʜᴀɴɴᴇʟ.
-🚦 𝐁ᴏᴛ 𝐓ᴏ 𝐔ꜱᴇ 𝐌ᴇ.</b>"""
+🎬 <i>Movie Requesting Groups</i>
+📣 <i>Movie Updates Channel</i>
+🚦 <i>How to Use This Bot</i></b>"""
 
     ABOUT_TXT = """<b>━━━❰ {} ❱━━━➣</b>
     
