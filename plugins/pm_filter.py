@@ -25,7 +25,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
-NON_IMG ="""<b><i>👋𝐇𝙴𝚈 <a href=tg://settings>𝐌𝚈 𝐅𝚁𝙸𝙴𝙽𝙳</a></i></b>\n\n<b>⌯ <i>𝐔𝚂𝙴 𝐓𝙷𝙴 𝐁𝚄𝚃𝚃𝙾𝙽 𝐁𝙴𝙻𝙾𝚆 𝐓𝙾 𝐒𝙴𝙰𝚁𝙲𝙷 𝐎𝙽 𝐆𝙾𝙾𝙶𝙻𝙴 𝐎𝚁 𝐈𝙼𝙳𝙱 𝐀𝙽𝙳 𝐂𝙾𝙿𝚈 𝐓𝙷𝙴 𝐂𝙾𝚁𝚁𝙴𝙲𝚃 𝐌𝙾𝚅𝙸𝙴 𝐍𝙰𝙼𝙴 𝐀𝙽𝙳 𝐏𝙰𝚂𝚃𝙴.!</i></b>\n\n<b>⌯<i> 𝐃𝙾𝙽'𝚃 𝐀𝚂𝙺 𝐌𝙾𝚅𝙸𝙴𝚂 𝐓𝙷𝙰𝚃 𝐀𝚁𝙴 𝐍𝙾𝚃 𝐑𝙴𝙻𝙴𝙰𝚂𝙴𝙳 𝐈𝙽 𝐎𝚃𝚃 𝐏𝙻𝙰𝚃𝙵𝙾𝚁𝙼.!</i></b>\n\n<b>⌯ <i>𝐓𝚁𝚈 𝐓𝙾 𝐀𝚂𝙺 𝐈𝙽 [ 𝐌𝙾𝚅𝙸𝙴 𝐍𝙰𝙼𝙴, 𝐘𝙴𝙰𝚁 ] 𝐓𝙷𝙸𝚂 𝐅𝙾𝚁𝙼𝙰𝚃.!</i></b>\n\n<i><b><u>⚠️ 𝐃𝙾𝙽'𝚃 𝐔𝚂𝙴: ➲ [+:;'*!-&.. etc</i></b></u>"""
+NON_IMG ="""<b><i>👋Hey <a href=tg://settings>My Friend</a></i></b>\n\n<b>❝ <i>Use the Button Below to Search on Google or IMDB And Copy the Correct Movie Name And Paste.</i></b>\n\n<b>❝ <i>Don't Ask Movies that Are Not Released in OTT Platform.</i></b>\n\n<b>❝ <i>Try to Ask in [ Movie name, Year ] This Fromat.</i></b>\n\n<i><b><u>⚠️ Don't Use: ➲ [+:;'*!-&.. etc</i></b></u>"""
 
 @Client.on_message(filters.command('autofilter') & filters.group & admin_fliter)
 async def fil_mod(client, message): 
