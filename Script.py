@@ -20,12 +20,12 @@ class script(object):
 <b>○ <i>Build Status : v5.2 [Stable]</b></i> """
 
     STATUS_TXT = """
-<b>╔═══[📊 Status Board 📊]═══╗</b>
-<b>📁 <i>Total Files</i>:<code>{}</code></b>
-<b>👥 <i>Total Members</i>:<code>{}</code></b>
+<b>╔═══[<u>📊 Status Board 📊</u>]═══╗</b>
+<b>📁 <i>Total Files</i>: <code>{}</code></b>
+<b>👥 <i>Total Members</i>: <code>{}</code></b>
 <b>💬 <i>Total Chats</i>: <code>{}</code></b>
 <b>🗃 <i>Used Storage</i>: <code>{}</code></b>
-<b>╚════════════════════╝</b>"""
+<b>╚═══════════════════╝</b>"""
     
     LOG_TEXT_G = """#AddNewGroup
     
