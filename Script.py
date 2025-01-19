@@ -7,15 +7,13 @@ class script(object):
 
     ABOUT_TXT = """<b><u>⚠️ 𝐀ʙᴏᴜᴛ 𝐌ᴇ</u></b>
 
-<b>╭━━━❰ {} ❱━━━➣</b>
-<b>┣ • 𝐎ᴡɴᴇʀ 𝐍ᴀᴍᴇ: <a href=https://t.me/TG_x_filter>🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></a>
-<b>┣ • 𝐂ʀᴇᴀᴛᴏʀ: <a href=tg://settings>𝐌ʏ 𝐅ʀɪᴇɴᴅ</b></a>
-<b>┣ • 𝐋ɪʙʀᴀʀʏ: 𝐏ʏʀᴏɢʀᴀᴍ</b>
-<b>┣ • 𝐋ᴀɴɢᴜᴀɢᴇ: 𝐏ʏᴛʜᴏɴ-3</b>
-<b>┣ • 𝐃ᴀᴛᴀ 𝐁ᴀꜱᴇ: 𝐌ᴏɴɢᴏ 𝐃𝐁 </b>
-<b>┣ • 𝐇ᴏꜱᴛᴇᴅ 𝐎ɴ: 𝐀ʟʟ 𝐖ᴇʙ</b>
-<b>┣ • 𝐁ᴜɪʟᴅ 𝐒ᴛᴀᴛᴜꜱ: ᴠ5.2 [𝐒ᴛᴀʙʟᴇ]</b>
-<b>╰━━━━━━━━━━━━━━━━━━━━➣</b>"""
+<b>━━━❰ {} ❱━━━➣</b>
+<b>○ Owner Name : <a href=https://t.me/TG_x_filter>🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></a>
+<b>○ Creator : <a href=tg://settings>My Friend</b></a>
+<b>○ Library : Pyrogram</b>
+<b>○ Language : Python3</b>
+<b>○ Data Base : MongoDB</b>
+<b>○ Build Status : v5.2 [Stable]</b> """
 
     STATUS_TXT = """<u><b>📊 𝐒ᴛᴀᴛᴜꜱ </b></u>
 
