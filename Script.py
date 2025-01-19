@@ -21,11 +21,11 @@ class script(object):
 
     STATUS_TXT = """
 <b>╔═══[📊 Status Board 📊]═══╗</b>
-<b>📁 Total Files :<code>{}</code></b>
-<b>👥 Total Members :<code>{}</code></b>
-<b>💬 Total Chats : <code>{}</code></b>
-<b>🗃 Used Storage : <code>{}</code></b>
-<b>╚══════════════════╝</b>"""
+<b>📁 <i>Total Files</i>:<code>{}</code></b>
+<b>👥 <i>Total Members</i>:<code>{}</code></b>
+<b>💬 <i>Total Chats</i>: <code>{}</code></b>
+<b>🗃 <i>Used Storage</i>: <code>{}</code></b>
+<b>╚════════════════════╝</b>"""
     
     LOG_TEXT_G = """#AddNewGroup
     
