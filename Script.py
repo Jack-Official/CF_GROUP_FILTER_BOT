@@ -51,8 +51,8 @@ class script(object):
 
 <b>☟ ʝσιи • ѕнαяє • ѕυρρσят ☟
 ╭────── • ◆ • ──────╮
-▢ Join : OTT Updates 
-▢ movie : Group Here
+▢ Join : [OTT Updates](https://t.me/cinema_flix_updates)
+▢ movie : [Group Here](https://t.me/+iEbhY7mM4oE1OTVl)
 ╰────── • ◆ • ──────╯
 ☟ ʝσιи • ѕнαяє • ѕυρρσят ☟</b>"""
 
