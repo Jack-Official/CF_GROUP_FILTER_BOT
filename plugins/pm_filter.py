@@ -440,10 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                          InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
-                          ],[
-                          InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                          InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
                         ]]
                     )
                 )                       
@@ -487,10 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                          InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
-                          ],[
-                          InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                          InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
                         ]]
                     )
                 )
@@ -530,10 +524,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                  InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
-                  ],[
-                  InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                  InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
                 ]]
             )
         )
