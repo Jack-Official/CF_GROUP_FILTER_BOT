@@ -41,12 +41,6 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton(' 🏞️ ', callback_data='nomg'),
-            InlineKeyboardButton(' 🛡 ', callback_data='nomg'),
-            InlineKeyboardButton(' 💳 ', callback_data='nomg'),
-            InlineKeyboardButton(' 💰 ', callback_data='nomg'),
-            InlineKeyboardButton(' ⚙ ', callback_data='nomg')
-        ], [
             InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
         ], [
             InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
@@ -89,12 +83,6 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton(' 🏞️ ', callback_data='nomg'),
-            InlineKeyboardButton(' 🛡 ', callback_data='nomg'),
-            InlineKeyboardButton(' 💳 ', callback_data='nomg'),
-            InlineKeyboardButton(' 💰 ', callback_data='nomg'),
-            InlineKeyboardButton(' ⚙ ', callback_data='nomg')
-        ], [
             InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
         ], [
             InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
@@ -225,10 +213,7 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [[                          
-                      InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-                      InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
-                      ],[
-                      InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+                      InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
                     ]]
                 )
             )
@@ -266,10 +251,7 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [[                          
-               InlineKeyboardButton('💌 𝐂ʜᴀɴɴᴇʟ', url="https://t.me/cinema_flix_updates"),
-               InlineKeyboardButton('𝐃ᴇʟᴇᴛᴇ 🚸', callback_data='close_data')
-               ],[
-               InlineKeyboardButton(text=f'📟 𝐅ɪʟᴇ 𝐒ɪᴢᴇ 【 {size} 】📟', callback_data='gxneo')
+               InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
             ]]
            )
         )
