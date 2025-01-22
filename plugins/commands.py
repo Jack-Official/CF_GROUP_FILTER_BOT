@@ -22,12 +22,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('➜ 𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('📢Movie OTT Update Channel📢', url='https://t.me/cinema_flix_updates')
             ],[
-            InlineKeyboardButton('📢𝐎ᴛᴛ 𝐔ᴘᴅᴀᴛᴇs', url='https://t.me/cinema_flix_updates'),
-            InlineKeyboardButton('𝐌ᴏᴠɪᴇ 𝐆ʀᴏᴜᴘ🎬', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('🍿Movies Group 1', url='https://t.me/Mallu_Movie_Hub_Group'),
+            InlineKeyboardButton('🍿Movies Group 2', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
-            InlineKeyboardButton('〄 𝐂ʜᴇᴄᴋ 𝐌ʏ 𝐏ᴍ 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton('〄 Check My Pm 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
         await message.reply(START_GROUP_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
