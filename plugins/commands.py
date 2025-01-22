@@ -41,13 +41,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
+            InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
         ], [
-            InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝐒ᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
+            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Support 💬', callback_data='support')
         ], [
-            InlineKeyboardButton('⚠️ 𝐀ʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('𝐂ʟᴏꜱᴇ ✗', callback_data='close_data')
+            InlineKeyboardButton('⚠️ About', callback_data='about'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
@@ -83,13 +83,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('✗ 𝐂ʟɪᴄᴋ 𝐓ᴏ 𝐂ʟᴏꜱᴇ 𝐓ʜɪꜱ 𝐁ᴜᴛᴛᴏɴꜱ ✗', callback_data='closeme')
+            InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
         ], [
-            InlineKeyboardButton('🔍 𝐒ᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝐒ᴜᴩᴩᴏʀᴛ 💬', callback_data='support')
+            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('Support 💬', callback_data='support')
         ], [
-            InlineKeyboardButton('⚠️ 𝐀ʙᴏᴜᴛ', callback_data='about'),
-            InlineKeyboardButton('𝐂ʟᴏꜱᴇ ✗', callback_data='close_data')    
+            InlineKeyboardButton('⚠️ About', callback_data='about'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')    
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
