@@ -171,21 +171,21 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("⤶ 𝐁ᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("☜ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ",
                                   callback_data="pages")]
         )
     elif off_set is None:
         btn.append(
-            [InlineKeyboardButton("❏ 𝐏ᴀɢᴇ", callback_data="pages"), 
+            [InlineKeyboardButton("❏ 𝗣𝗮𝗴𝗲", callback_data="pages"), 
              InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ", callback_data="pages"),
-             InlineKeyboardButton("𝐍ᴇxᴛ ⤷", callback_data=f"next_{req}_{key}_{n_offset}")])
+             InlineKeyboardButton("𝗡𝗲𝘅𝘁 ☞", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("⤶ 𝐁ᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("☜ 𝗕𝗮𝗰𝗸", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} ", callback_data="pages"),
-                InlineKeyboardButton("𝐍ᴇxᴛ ⤷", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("𝗡𝗲𝘅𝘁 ☞", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -965,13 +965,13 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton("❏ 𝐏ᴀɢᴇ", callback_data="pages"), 
+            [InlineKeyboardButton("❏ 𝗣𝗮𝗴𝗲𝘀", callback_data="pages"), 
              InlineKeyboardButton(text=f"1/{math.ceil(int(total_results) / 6)}", callback_data="pages"),
-             InlineKeyboardButton(text="𝐍ᴇxᴛ ⤷", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ☞", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="💢..𝐍ᴏ 𝐌ᴏʀᴇ 𝐍ᴇxᴛ 𝐏ᴀɢᴇꜱ..💢", callback_data="pages")]
+            [InlineKeyboardButton(text="💢..𝗡𝗼 𝗠𝗼𝗿𝗲 𝗡𝗲𝘅𝘁 𝗣𝗮𝗴𝗲𝘀..💢", callback_data="pages")]
         )                   
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -1010,7 +1010,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>📁 {search} 📁</b>\n\n<b>𝐃𝐞𝐚𝐭𝐚𝐢𝐥𝐬: 𝚄𝚗𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎...</b>\n🗣️ Request By {message.from_user.mention}</b>\n<b>📤 Uploaded By {message.chat.title}</b>\n\n<b><u>👇 𝗬𝗼𝘂𝗿 𝗠𝗼𝘃𝗶𝗲 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆 𝗡𝗼𝘄👇</u></b>"
+        cap = f"<b>📁 {search} 📁</b>\n\n<b>𝐃𝐞𝐚𝐭𝐚𝐢𝐥𝐬: 𝚄𝚗𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎...</b>\n<b>🗣️ Request By {message.from_user.mention}</b>\n<b>📤 Uploaded By {message.chat.title}</b>\n\n<b><u>👇 𝗬𝗼𝘂𝗿 𝗠𝗼𝘃𝗶𝗲 𝗶𝘀 𝗥𝗲𝗮𝗱𝘆 𝗡𝗼𝘄👇</u></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
