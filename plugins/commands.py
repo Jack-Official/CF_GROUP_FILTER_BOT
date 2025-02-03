@@ -24,8 +24,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('📢Movie OTT Update Channel📢', url='https://t.me/cinema_flix_updates')
             ],[
-            InlineKeyboardButton('🍿Movies Group 1', url='https://t.me/Mallu_Movie_Hub_Group'),
-            InlineKeyboardButton('🍿Movies Group 2', url='https://t.me/+iEbhY7mM4oE1OTVl')
+            InlineKeyboardButton('🍿Movie Group 1', url='https://t.me/Mallu_Movie_Hub_Group'),
+            InlineKeyboardButton('🍿Movie Group 2', url='https://t.me/+iEbhY7mM4oE1OTVl')
             ],[
             InlineKeyboardButton('〄 Check My Pm 〄', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
@@ -43,7 +43,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🤴 Owner', callback_data='my_owner'),
             InlineKeyboardButton('Support 💬', callback_data='support')
         ], [
             InlineKeyboardButton('⚠️ About', callback_data='about'),
@@ -85,7 +85,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
         ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🤴 Owner', callback_data='my_owner'),
             InlineKeyboardButton('Support 💬', callback_data='support')
         ], [
             InlineKeyboardButton('⚠️ About', callback_data='about'),
