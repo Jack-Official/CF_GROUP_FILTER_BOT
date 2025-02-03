@@ -554,7 +554,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🤴 Owner', callback_data='my_owner'),
             InlineKeyboardButton('Support 💬', callback_data='support')
             ],[
             InlineKeyboardButton('⚠️ About', callback_data='about'),
@@ -568,12 +568,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "support":
         buttons = [[
-            InlineKeyboardButton('❔ How To Use Me ❔', callback_data='howtoues')
+            InlineKeyboardButton('• Main Update Channel •', url="https://t.me/cinema_flix_updates")
             ],[
             InlineKeyboardButton('• Group 1 •', url="https://t.me/Mallu_Movie_Hub_Group"),
             InlineKeyboardButton('• Group 2 •', url="https://t.me/+iEbhY7mM4oE1OTVl")
-            ],[
-            InlineKeyboardButton('• Main Update Channel •', url="https://t.me/cinema_flix_updates")
             ],[
             InlineKeyboardButton('⭅ Back To Home ⇛', callback_data='start')
         ]] 
@@ -594,16 +592,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "howtoues":
+    elif query.data == "my_owner":
         buttons = [[
-            InlineKeyboardButton('➜ Add me to Your Group ➜', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('⭅ Back', callback_data='support'),
+            InlineKeyboardButton('⭅ Back', callback_data='start'),
             InlineKeyboardButton('Contact 📞', url="https://t.me/TG_x_filter")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HOWTOUES_TXT,
+            text=script.MY_OWNER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
