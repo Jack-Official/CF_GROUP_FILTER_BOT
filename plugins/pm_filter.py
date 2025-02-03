@@ -954,7 +954,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f"🗂 Files:{len(btn)}", callback_data="files"),
+            InlineKeyboardButton(f"🗂 {len(btn)}", callback_data="files"),
             InlineKeyboardButton("⚙ Tips", 'reqtips'),
             InlineKeyboardButton("💬 Info", 'reqinfo'),
             InlineKeyboardButton("🗑️ Close", callback_data="close_data")
