@@ -67,7 +67,7 @@ class script(object):
 ┣ ○ <b><i>Full Name : 🇮🇳 𝗛𝗘𝗗𝗗𝗬 ◢ ◤</b></i>
 ┣ ○ <b><i>Username : @TG_x_filter</b></i>
 ╰──────────────────────</b></b>"""
-    IMDB_TEMPLATE_TXT =
+    IMDB_TEMPLATE_TXT = """<b>🎬 Name : <a href={url}>{title}</a> \n📅 Year : {year} \n🎙 Language : {language} \n🌟 Rating : {rating}/ 10 \n🎭 Genre : {genres}</b>"""
     
    
    
