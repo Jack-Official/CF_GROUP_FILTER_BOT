@@ -55,7 +55,7 @@ START_GROUP_MESSAGE = environ.get('START_GROUP_MESSAGE', '<b>{user}</b>\n\n<i>�
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "👋ഹലോ {query}! ഇത് നിന്റെ അല്ല...🥴")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b><u>താഴെ ഉള്ള 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ക്ലിക്ക് ചെയ്ത് കഴിഞ്ഞ് 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 ക്ലിക്ക് ചെയ്‌താൽ നിങ്ങൾക് സിനിമ ലഭിക്കുന്നതാണ്.!</u></b>\n\n<b><u>Click the 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 and then click 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻 and you will get the File.!</u></b>')
 WELCOM_PIC = environ.get("WELCOM_PIC", "https://envs.sh/RCQ.jpg")
-WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b><i>👋Hey {user}.!\nWelcome To My Group {chat}\n\n‼️ Thanks For Joining My Group.!🥹\n\n‼️ Type Any Movie And Web-Series, Name And Enjoy.🎉</i></b>")
+WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b><i>👋Hey {user}.!\nWelcome To My Group {chat}\n\n‼️ Thanks For Joining My Group.!🥹\n\n‼️ Type Any Movie And Web-Series, Name And Enjoy.🎉</i></b>\n\n<code>🗣️ Don't ask 18+ Chats. 🤫🔗 Don't Send Any Promotion Links. 🤫</code>")
 PMFILTER = bool(environ.get("PMFILTER", True))
 G_FILTER = bool(environ.get("G_FILTER", True))
 SUPPORT_CHAT_ID = -1002055541286
