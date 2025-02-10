@@ -950,7 +950,6 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f"🗂 {len(btn)}", callback_data="files"),
             InlineKeyboardButton("⚙ Tips", 'reqtips'),
             InlineKeyboardButton("💬 Info", 'reqinfo'),
             InlineKeyboardButton("🗑️ Close", callback_data="close_data")
@@ -1006,7 +1005,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎉 Here is what i found for your query\n<u>{search}</u></b>"
+        cap = f"<b>🎉 Here is what i found for your query<u>{search}</u></b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
