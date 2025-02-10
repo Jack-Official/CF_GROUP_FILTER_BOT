@@ -1005,7 +1005,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎉 Here is what i found for your query<u>{search}</u></b>"
+        cap = f"<b>⚬ The Results For : {search}</b>\n\n<b>⚬ Request By : {message.from_user.mention}</b>\n\n<b>⚬ Total Files : {str(total_results)}</b>\n\n<b>⚬ Powered By : {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
