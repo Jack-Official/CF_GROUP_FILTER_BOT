@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "pmfilep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
+                          InlineKeyboardButton('🗑️ Delete / Close 🗑️', callback_data='close_data')
                         ]]
                     )
                 )                       
@@ -484,7 +484,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     protect_content=True if ident == "filep" else False,
                     reply_markup=InlineKeyboardMarkup(
                         [[                          
-                          InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
+                          InlineKeyboardButton('🗑️ Delete / Close 🗑️', callback_data='close_data')
                         ]]
                     )
                 )
@@ -524,7 +524,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [[                          
-                  InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
+                  InlineKeyboardButton('🗑️ Delete / Close 🗑️', callback_data='close_data')
                 ]]
             )
         )
@@ -584,7 +584,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('⭅ Back', callback_data='start'),
-            InlineKeyboardButton('Status 📊', callback_data='stats')
+            InlineKeyboardButton('Status 📊', callback_data='stats'),
+            InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons) 
         await query.message.edit_text(
@@ -929,7 +930,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔗 [{get_size(file.file_size)}]  {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
+                    text=f" {get_size(file.file_size)}  {file.file_name}", callback_data=f'{pre}#{req}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -942,7 +943,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🔗 {get_size(file.file_size)}",
+                    text=f" {get_size(file.file_size)}",
                     callback_data=f'{pre}#{req}#{file.file_id}',
                 ),
             ]
@@ -1038,7 +1039,7 @@ async def advantage_spell_chok(msg):
 
     ]]
     spl = await msg.reply_photo(
-            photo="https://envs.sh/9fX.jpg", 
+            photo="https://envs.sh/RCE.jpg", 
             caption=NON_IMG.format(mv_rqst),
             reply_markup=InlineKeyboardMarkup(btn)
     )
