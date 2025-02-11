@@ -44,14 +44,13 @@ class script(object):
 
 <b>• 🤖 ʙᴏᴛ ᴜꜱᴇʀɴᴀᴍᴇ : @{}</b> """   
 
-    CUSTOM_FILE_CAPTION = """<b>🎟️ ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ  {mention}</b>
+    CUSTOM_FILE_CAPTION = """<b>🎟️ Hello 👋 {mention} 💕</b>
     
 <b>📁 File Name :</b><b><code>{file_name}</code></b>
 
 <b>☟ ʝσιи • ѕнαяє • ѕυρρσят ☟
 ╭────── • ◆ • ──────╮
 ▢ Join : [OTT Updates](https://t.me/cinema_flix_updates)
-▢ movie : [Group Here](https://t.me/+iEbhY7mM4oE1OTVl)
 ╰────── • ◆ • ──────╯
 ☟ ʝσιи • ѕнαяє • ѕυρρσят ☟</b>"""
 
