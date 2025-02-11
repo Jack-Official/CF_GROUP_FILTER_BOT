@@ -70,9 +70,8 @@ async def start(client, message):
         if message.command[1] != "subscribe": 
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub'
-            btn = [[InlineKeyboardButton("𝐉ᴏɪɴ 𝐂ʜᴀɴɴᴇʟ", url=invite_link.invite_link),
-                    InlineKeyboardButton(" 𝐌ᴇ 𝐉ᴏɪɴᴇᴅ", callback_data=f"{pre}#{file_id}")],[
-                    InlineKeyboardButton("𝐇ᴇʏ 𝐁ᴏᴛ....! 𝐖ʜʏ 𝐈'ᴍ 𝐉ᴏɪɴɪɴɢ", callback_data="neosub")]]
+            btn = [[InlineKeyboardButton("🔗 Join Channel", url=invite_link.invite_link),
+                    InlineKeyboardButton("Try Again 🔃", callback_data=f"{pre}#{file_id}")
         await client.send_photo(
             chat_id=message.from_user.id,
             photo=FORCE_IMG,
@@ -213,7 +212,7 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [[                          
-                      InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
+                      InlineKeyboardButton('🗑️ Delete / Close 🗑️', callback_data='close_data')
                     ]]
                 )
             )
@@ -251,7 +250,7 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [[                          
-               InlineKeyboardButton('🗑️ Delete File 🗑️', callback_data='close_data')
+               InlineKeyboardButton('🗑️ Delete / Close 🗑️', callback_data='close_data')
             ]]
            )
         )
