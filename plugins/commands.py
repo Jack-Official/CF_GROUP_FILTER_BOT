@@ -71,7 +71,7 @@ async def start(client, message):
             kk, file_id = message.command[1].split("_", 1)
             pre = 'checksubp' if kk == 'filep' else 'checksub'
             btn = [[InlineKeyboardButton("🔗 Join Channel", url=invite_link.invite_link),
-                    InlineKeyboardButton("Try Again 🔃", callback_data=f"{pre}#{file_id}")
+                    InlineKeyboardButton("Try Again 🔃", callback_data=f"{pre}#{file_id}")]]
         await client.send_photo(
             chat_id=message.from_user.id,
             photo=FORCE_IMG,
