@@ -947,13 +947,7 @@ async def auto_filter(client, msg, spoll=False):
                 ),
             ]
             for file in files
-        ]
-    btn.insert(0, 
-        [
-            InlineKeyboardButton("⚙ Tips", 'reqtips'),
-            InlineKeyboardButton("💬 Info", 'reqinfo'),
-            InlineKeyboardButton("🗑️ Close", callback_data="close_data")
-        ]
+        ]   
     )
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
