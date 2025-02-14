@@ -49,14 +49,10 @@ async def start(client, message):
             InlineKeyboardButton('⚠️ About', callback_data='about'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAINdmL9uWnC3ptj9YnTjFU4YGr5dtzwAAIEAAPBJDExieUdbguzyBAeBA")
-        await asyncio.sleep(1)
-        await m.delete()
+        reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -90,14 +86,10 @@ async def start(client, message):
             InlineKeyboardButton('⚠️ About', callback_data='about'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')    
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAINdmL9uWnC3ptj9YnTjFU4YGr5dtzwAAIEAAPBJDExieUdbguzyBAeBA")
-        await asyncio.sleep(1)
-        await m.delete()
+        reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
             photo=random.choice(PICS),
-            caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
+            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
