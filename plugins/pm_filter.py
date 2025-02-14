@@ -546,10 +546,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]   
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=START_MESSAGE.format(user=query.from_user.mention, bot=temp.B_LINK),
+            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML  
-        )
+            parse_mode=enums.ParseMode.HTML
+        )        
     elif query.data == "start":   
         buttons = [[
             InlineKeyboardButton('✗ Click To Close This Buttons ✗', callback_data='closeme')
@@ -562,10 +562,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=START_MESSAGE.format(user=query.from_user.mention, bot=temp.B_LINK),
+            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
+        )        
     elif query.data == "support":
         buttons = [[
             InlineKeyboardButton('• Main Update Channel •', url="https://t.me/cinema_flix_updates")
