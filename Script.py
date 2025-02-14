@@ -1,5 +1,5 @@
 class script(object):   
-    START_MESSAGE = "'"<b><i>Hello {user}!</i>
+    START_MESSAGE = "'"<b><i>Hello !</i>
    Test For St Message</b>"""
    
     SUPPORT_TXT = """<b><u>⦁ Channels & Groups ⦁</u>
