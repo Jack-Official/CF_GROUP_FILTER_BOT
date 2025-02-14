@@ -1,4 +1,8 @@
 class script(object):   
+    START_MESSAGE = "'"<b><i>Hello {user}!</i>
+    
+    <i>Im a Group manager Bot Created for <a href=https://t.me/cinema_flix_updates>Cɪɴᴇᴍᴀ Fʟɪx</a>...Only authorised admins can access dont waste your time.!</i></b>"""
+
     SUPPORT_TXT = """<b><u>⦁ Channels & Groups ⦁</u>
 
 🎬 <i>Movie Requesting Groups</i>
